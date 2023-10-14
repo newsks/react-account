@@ -23,7 +23,6 @@ function App() {
 
   const getPaymentFormData = (data) => {
     setExpenses((prevExpenses) => [
-      ...prevExpenses,
       {
         id: Math.random().toString(),
         title: data.name,
@@ -33,6 +32,7 @@ function App() {
         memo: data.memo,
         repurchase: data.repurchase === "yes" ? true : false,
       },
+      ...prevExpenses,
     ]);
   };
 
@@ -66,6 +66,12 @@ function App() {
     }
   });
 
+  // 리스트 삭제
+  const deleteExpenseItem = (id) => {
+    const newFilteredArray = expenses.filter((item) => item.id !== id);
+    setExpenses(newFilteredArray);
+  };
+
   return (
     <div className="form-container">
       <Forminput getPaymentFormData={getPaymentFormData} />
@@ -82,7 +88,7 @@ function App() {
 
         <SortForm sortOrder={sortOrder} setSortOrder={setSortOrder} />
       </div>
-      <Itemlist items={sortedExpenses} />
+      <Itemlist items={sortedExpenses} deleteExpenseItem={deleteExpenseItem} />
     </div>
   );
 }

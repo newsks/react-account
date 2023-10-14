@@ -1,6 +1,6 @@
 import React from "react";
 import "./itemlist.css";
-const Itemlist = ({ items }) => {
+const Itemlist = ({ items, deleteExpenseItem }) => {
   return (
     <ul>
       {items.map((item) => (
@@ -16,6 +16,12 @@ const Itemlist = ({ items }) => {
             <div>메모: {item.memo}</div>
             <div>재구매 여부: {item.repurchase ? "예" : "아니오"}</div>
           </div>
+          <button
+            className="btn-delete"
+            onClick={() => deleteExpenseItem(item.id)}
+          >
+            삭제하기
+          </button>
         </li>
       ))}
     </ul>

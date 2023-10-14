@@ -10,7 +10,19 @@
   font-weight: bold;
   display: flex;
   font-size: 16px;
+  align-items: center;
 }
-.item-lt {
-  width: 300px;
+.item-lt,
+.item-rt {
+  width: 210px;
+}
+
+.btn-delete {
+  height: 50px;
+  margin-left: 80px;
+  background-color: #5d5fef;
+  color: #fff;
+  border: none;
+  padding: 0 30px;
+  border-radius: 5px;
 }
