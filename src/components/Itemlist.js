@@ -14,7 +14,7 @@ const Itemlist = ({ items }) => {
           <div className="item-rt">
             <div>날짜: {item.date.toLocaleDateString()}</div>
             <div>메모: {item.memo}</div>
-            <div>재구매 여부: {item.rebuy ? "예" : "아니오"}</div>
+            <div>재구매 여부: {item.repurchase ? "예" : "아니오"}</div>
           </div>
         </li>
       ))}

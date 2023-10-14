@@ -9,12 +9,12 @@ function App() {
   const [expenses, setExpenses] = useState([
     {
       id: "e1",
-      title: "수건",
+      title: "물티슈",
       price: 3000,
       type: "daily",
-      date: new Date(2023, 10, 11),
-      memo: "질이 좋다.",
-      rebuy: true,
+      date: new Date(2023, 10, 14),
+      memo: "양이 많아서 좋다",
+      repurchase: true,
     },
   ]);
 
@@ -31,7 +31,7 @@ function App() {
         type: data.type || "기타",
         date: new Date(data.date),
         memo: data.memo,
-        rebuy: data.rebuy === "yes" ? true : false,
+        repurchase: data.repurchase === "yes" ? true : false,
       },
     ]);
   };

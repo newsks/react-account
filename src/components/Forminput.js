@@ -14,18 +14,18 @@ const Forminput = ({ getPaymentFormData }) => {
     type: "",
     date: new Date().toISOString().split("T")[0],
     memo: "",
-    rebuy: "no",
+    repurchase: "no",
   });
 
   const [isMemoEnabled, setIsMemoEnabled] = useState(false);
 
-  const [rebuy, setRebuy] = useState("no");
+  const [repurchase, setRepurchase] = useState("no");
 
   const handleRadioChange = (event) => {
-    setRebuy(event.target.value);
+    setRepurchase(event.target.value);
     setObjectState((prevState) => ({
       ...prevState,
-      rebuy: event.target.value,
+      repurchase: event.target.value,
     }));
   };
 
@@ -80,7 +80,7 @@ const Forminput = ({ getPaymentFormData }) => {
       type: "",
       date: new Date().toISOString().split("T")[0],
       memo: "",
-      rebuy: "no",
+      repurchase: "no",
     });
   };
 
@@ -140,7 +140,7 @@ const Forminput = ({ getPaymentFormData }) => {
             <input
               type="radio"
               value="yes"
-              checked={rebuy === "yes"}
+              checked={repurchase === "yes"}
               onChange={handleRadioChange}
             />
             예
@@ -149,7 +149,7 @@ const Forminput = ({ getPaymentFormData }) => {
             <input
               type="radio"
               value="no"
-              checked={rebuy === "no"}
+              checked={repurchase === "no"}
               onChange={handleRadioChange}
             />
             아니오
