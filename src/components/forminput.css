@@ -1,0 +1,57 @@
+.form-st {
+  width: 650px;
+  margin: 50px 0 0 60px;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #5d5fef;
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+
+.form-list {
+  margin: 10px 0;
+}
+
+.form-list label {
+  width: 50px;
+  padding-right: 20px;
+}
+
+.form-list input {
+  width: 200px;
+  height: 30px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* 체크박스 디폴트 이미지 적용 */
+input[type="checkbox"]:checked + .on {
+  background: #f86480;
+}
+/* // 체크되었을 때 background-position 변경 */
+input[id="list"]:checked + label span {
+  background-position: -75px -438px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 20px;
+}
+
+.btn-submit button {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #888;
+  background-color: #5d5fef;
+}

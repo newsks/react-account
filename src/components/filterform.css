@@ -1,0 +1,14 @@
+.form-filter {
+  width: 650px;
+  margin: 10px 0 0 60px;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #5d5fef;
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+
+.form-filter label {
+  margin: 0 10px 0 10px;
+}
