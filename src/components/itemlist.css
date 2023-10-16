@@ -3,7 +3,7 @@
   height: 120px;
   border: 1px solid #555;
   background-color: #fff;
-  color: #5d5fef;
+  color: var(--primary-color);
   margin: 20px;
   padding: 20px 50px;
   border-radius: 20px;
@@ -20,7 +20,7 @@
 .btn-delete {
   height: 50px;
   margin-left: 80px;
-  background-color: #5d5fef;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 0 30px;

@@ -4,7 +4,7 @@
   font-size: 19px;
   font-weight: bold;
   background-color: #fff;
-  color: #5d5fef;
+  color: var(--primary-color);
   padding: 30px 50px;
   border-radius: 20px;
 }
@@ -33,7 +33,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .on {
   background: #f86480;
 }
-/* // 체크되었을 때 background-position 변경 */
+/* 체크되었을 때 background-position 변경 */
 input[id="list"]:checked + label span {
   background-position: -75px -438px;
 }
@@ -53,5 +53,5 @@ input[type="radio"] {
   color: #fff;
   border-radius: 5px;
   border: 1px solid #888;
-  background-color: #5d5fef;
+  background-color: var(--primary-color);
 }

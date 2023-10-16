@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #5d5fef;
+}
 
 body {
   -webkit-touch-callout: none;
@@ -15,7 +18,7 @@ body {
 
   font-family: "Noto Sans KR", sans-serif;
   color: #ffffff;
-  background-color: #5d5fef;
+  background-color: var(--primary-color);
 }
 
 div {
